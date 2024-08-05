@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>ニコニコ動画（Re:仮）で見た動画を思い出すやつ</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 20px 0;
+    }
+
+    li {
+      margin: 5px 0;
+      font-size: large;
+      vertical-align: middle;
+      height: 40px;
+      line-height: 40px;
+      display: flex;
+      list-style-type: none;
+    }
+
+    img {
+      margin: 4px;
+      height: 32px;
+      width: 32px;
+    }
+
+    span {
+      margin: 0 10px;
+    }
+
+    div#main a {
+      margin: 0 10px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    h2 {
+      color: red;
+    }
+
+    div#main {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    div#footer {
+      text-align: right;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .textbox-container {
+      position: relative;
+      float: right;
+    }
+
+    .clear-button {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    input[type="text"] {
+      padding-right: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="main">
+    <div>
+      <h1>ニコニコ動画（Re:仮）で見た動画を思い出すやつ</h1>
+      <div class="textbox-container">
+        <select id="genre">
+          <option value="">ジャンル選択(漏れがあるかも)</option>
+          <option value="2020">2020年～</option>
+          <option value="2019">2019年</option>
+          <option value="2018">2018年</option>
+          <option value="2017">2017年</option>
+          <option value="tag_saino">才能の無駄遣い</option>
+          <option value="2016">2016年</option>
+          <option value="tag_jinrui">人類には早すぎる動画</option>
+          <option value="2015">2015年</option>
+          <option value="2014">2014年</option>
+          <option value="2013">2013年</option>
+          <option value="2012">2012年</option>
+          <option value="2011">2011年</option>
+          <option value="2010">2010年</option>
+          <option value="2009">2009年</option>
+          <option value="2008">2008年</option>
+          <option value="2007">2007年</option>
+        </select>
+
+        <input type="text" id="filter-input" size="40" placeholder="検索...">
+        <button class="clear-button" id="clear-button">&times;</button>
+      </div>
+      <select id="sort">
+        <option value="lastVisitTime desc">最近見た順　</option>
+        <option value="lastVisitTime asc">前に見た順</option>
+        <option value="number desc">新しい順</option>
+        <option value="number asc">古い順</option>
+      </select>
+      <ul id="history-list"></ul>
+      <script src="list.js"></script>
+    </div>
+  </div>
+  <div id="footer">
+    感謝<br>
+    <a href="https://nicorekari.nanasi-rasi.net/" target="_blank">ニコリ(仮)検索 (v2)</a><br>
+    <a href="https://wikiwiki.jp/nicorekari/" target="_blank">ニコニコRe:仮で見れる動画をまとめておくwiki</a><br>
+    <a href="https://static.commons.nicovideo.jp/" target="_blank">ニコニ・コモンズ(Re_仮)</a><br>
+    <br>
+    作者<br>
+    <a href="https://nicovideo.jp/user/376135/" target="_blank">ろじろじ</a>
+  </div>
+</body>
+
+</html>
