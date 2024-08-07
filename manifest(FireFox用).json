@@ -1,7 +1,7 @@
 {
     "name": "ニコニコ動画（Re:仮）で見た動画を思い出すやつ",
     "description": "ニコニコ動画（Re:仮）で見た動画を思い出すやつ",
-    "version": "1.2.1",
+    "version": "1.4.0",
     "manifest_version": 3,
     "background": {
         "scripts": [

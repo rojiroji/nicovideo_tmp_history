@@ -1,13 +1,16 @@
 {
     "name": "ニコニコ動画（Re:仮）で見た動画を思い出すやつ",
     "description": "ニコニコ動画（Re:仮）で見た動画を思い出すやつ",
-    "version": "1.3.0",
+    "version": "1.4.0",
     "manifest_version": 3,
     "background": {
         "service_worker": "icon_clicked.js"
     },
     "action": {},
-    "permissions": ["history"],
+    "permissions": [
+        "history",
+        "storage"
+    ],
     "icons": {
         "16": "icon/icon_16.png",
         "48": "icon/icon_48.png",
